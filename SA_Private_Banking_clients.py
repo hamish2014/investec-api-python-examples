@@ -176,7 +176,7 @@ response = requests.post(
         'Authorization': 'Bearer %s' % access_token,
     },
     data = {
-        'transferList': [
+        'paymentList': [
             {
                 'beneficiaryId': beneficiaries["data"][0]["profileId"],
                 'amount': '28',
