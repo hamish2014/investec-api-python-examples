@@ -178,7 +178,7 @@ response = requests.post(
     data = {
         'paymentList': [
             {
-                'beneficiaryId': beneficiaries["data"][0]["profileId"],
+                'beneficiaryId': beneficiaries["data"][0]["beneficiaryId"],
                 'amount': '28',
                 'myReference': 'API transfer',
                 'theirReference': 'API transfer'
