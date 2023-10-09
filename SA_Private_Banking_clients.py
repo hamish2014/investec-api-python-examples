@@ -188,7 +188,7 @@ response = requests.post(
 )
 if response.status_code == 200:
     pay_response = json.loads(response.text)
-    print(' - R28 transferred from accounts[0] to beneficiaries[0]')
+    print(' - R28 paid from accounts[0] to beneficiaries[0]')
     if verbose or True:
         print(json.dumps(pay_response, sort_keys=True, indent=2) )
 else:
