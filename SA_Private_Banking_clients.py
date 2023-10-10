@@ -148,7 +148,7 @@ response = requests.post(
     headers = {
         'Authorization': 'Bearer %s' % access_token,
     },
-    data = {
+    json = {
         'transferList': [
             {
                 'beneficiaryAccountId': accounts["data"]["accounts"][1]["accountId"],
@@ -175,13 +175,13 @@ response = requests.post(
     headers = {
         'Authorization': 'Bearer %s' % access_token,
     },
-    data = {
+    json = {
         'paymentList': [
             {
                 'beneficiaryId': beneficiaries["data"][0]["beneficiaryId"],
                 'amount': '28',
-                'myReference': 'API transfer',
-                'theirReference': 'API transfer'
+                'myReference': 'My 42 payment',
+                'theirReference': 'payment 42'
             }
         ]
     }
